@@ -36,6 +36,8 @@ export default (context) => {
 
       let bridgingHeaderPath;
       let bridgingHeaderContent;
+      let swift2objHeaderPath;
+      let swift2objcHeaderContent;
       let projectName;
       let projectPath;
       let pluginsPath;
@@ -78,7 +80,22 @@ export default (context) => {
           '//',
           '#import <Cordova/CDV.h>' ];
         fs.writeFileSync(bridgingHeaderPath, bridgingHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
-        xcodeProject.addHeaderFile('Bridging-Header.h');
+        xcodeProject.addHeaderFile('Bridging-Header.h', null, );
+      }
+
+      swift2objHeaderPath = path.posix.join(projectPath, 'Plugins', 'Swift2Objc-Header.h');
+
+      try {
+        fs.statSync(swift2objHeaderPath);
+      } catch (err) {
+        // If the bridging header doesn't exist, we create it with the minimum
+        // ProductModuleName-Swift.h import.
+        swift2objcHeaderContent = [ '//',
+          '//  Use this file to import your projects\'s generated swift-header to expose Swift to Objective-C.',
+          '//',
+          '#import "' + projectName.replace(' ', '_') + '-Swift.h"' ];
+        fs.writeFileSync(swift2objHeaderPath, swift2objcHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
+        xcodeProject.addHeaderFile('Swift2Objc-Header.h');
       }
 
       buildConfigs = xcodeProject.pbxXCBuildConfigurationSection();
