@@ -93,7 +93,7 @@ export default (context) => {
         swift2objcHeaderContent = [ '//',
           '//  Use this file to import your projects\'s generated swift-header to expose Swift to Objective-C.',
           '//',
-          '#import "' + projectName.replace(' ', '_') + '-Swift.h"' ];
+          '#import "' + projectName.replace(/\ /g, '_') + '-Swift.h"' ];
         fs.writeFileSync(swift2objHeaderPath, swift2objcHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
         xcodeProject.addHeaderFile('Swift2Objc-Header.h');
       }

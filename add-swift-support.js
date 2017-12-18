@@ -7,45 +7,45 @@
 		var a = typeof exports === 'object' ? factory(require("util"), require("fs"), require("path"), require("events"), require("stream"), require("child_process"), (function webpackLoadOptionalExternalModule() { try { return require("crypto"); } catch(e) {} }())) : factory(root["util"], root["fs"], root["path"], root["events"], root["stream"], root["child_process"], root["crypto"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_9__, __WEBPACK_EXTERNAL_MODULE_12__, __WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_39__, __WEBPACK_EXTERNAL_MODULE_103__, __WEBPACK_EXTERNAL_MODULE_104__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_9__, __WEBPACK_EXTERNAL_MODULE_12__, __WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_39__, __WEBPACK_EXTERNAL_MODULE_104__, __WEBPACK_EXTERNAL_MODULE_105__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-
+/******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
 /******/ 			exports: {}
 /******/ 		};
-
+/******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
-
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-
-
+/******/
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-
+/******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-
+/******/
 /******/ 	// identity function for calling harmony imports with the correct context
 /******/ 	__webpack_require__.i = function(value) { return value; };
-
+/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -56,7 +56,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 			});
 /******/ 		}
 /******/ 	};
-
+/******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
 /******/ 	__webpack_require__.n = function(module) {
 /******/ 		var getter = module && module.__esModule ?
@@ -65,15 +65,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		__webpack_require__.d(getter, 'a', getter);
 /******/ 		return getter;
 /******/ 	};
-
+/******/
 /******/ 	// Object.prototype.hasOwnProperty.call
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-
+/******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
-
+/******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 105);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -115,7 +115,7 @@ module.exports = isObject;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseAssign = __webpack_require__(26),
-    baseCreate = __webpack_require__(73),
+    baseCreate = __webpack_require__(74),
     isIterateeCall = __webpack_require__(15);
 
 /**
@@ -266,7 +266,7 @@ module.exports = require("util");
 
   isFunction = __webpack_require__(11);
 
-  isEmpty = __webpack_require__(93);
+  isEmpty = __webpack_require__(94);
 
   XMLElement = null;
 
@@ -293,8 +293,8 @@ module.exports = require("util");
         XMLComment = __webpack_require__(21);
         XMLDeclaration = __webpack_require__(22);
         XMLDocType = __webpack_require__(23);
-        XMLRaw = __webpack_require__(61);
-        XMLText = __webpack_require__(63);
+        XMLRaw = __webpack_require__(62);
+        XMLText = __webpack_require__(64);
       }
     }
 
@@ -623,7 +623,7 @@ module.exports = isLength;
 var getNative = __webpack_require__(32),
     isArrayLike = __webpack_require__(10),
     isObject = __webpack_require__(0),
-    shimKeys = __webpack_require__(92);
+    shimKeys = __webpack_require__(93);
 
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeKeys = getNative(Object, 'keys');
@@ -870,7 +870,7 @@ module.exports = isArguments;
  */
 
 var deprecate = __webpack_require__(18);
-var DOMParser = __webpack_require__(101).DOMParser;
+var DOMParser = __webpack_require__(102).DOMParser;
 
 /**
  * Module exports.
@@ -1087,12 +1087,12 @@ module.exports = __webpack_require__(5).deprecate;
     EventEmitter = __webpack_require__(38).EventEmitter,
     path = __webpack_require__(12),
     uuid = __webpack_require__(44),
-    fork = __webpack_require__(103).fork,
-    pbxWriter = __webpack_require__(54),
-    pbxFile = __webpack_require__(53),
+    fork = __webpack_require__(104).fork,
+    pbxWriter = __webpack_require__(55),
+    pbxFile = __webpack_require__(54),
     fs = __webpack_require__(9),
-    parser = __webpack_require__(52),
-    plist = __webpack_require__(48),
+    parser = __webpack_require__(53),
+    plist = __webpack_require__(49),
     COMMENT_KEY = /_comment$/
 
 function pbxProject(filename) {
@@ -3341,13 +3341,13 @@ module.exports = pbxProject;
 
   XMLComment = __webpack_require__(21);
 
-  XMLDTDAttList = __webpack_require__(57);
+  XMLDTDAttList = __webpack_require__(58);
 
-  XMLDTDEntity = __webpack_require__(59);
+  XMLDTDEntity = __webpack_require__(60);
 
-  XMLDTDElement = __webpack_require__(58);
+  XMLDTDElement = __webpack_require__(59);
 
-  XMLDTDNotation = __webpack_require__(60);
+  XMLDTDNotation = __webpack_require__(61);
 
   XMLProcessingInstruction = __webpack_require__(25);
 
@@ -3535,11 +3535,11 @@ module.exports = pbxProject;
 
   isFunction = __webpack_require__(11);
 
-  every = __webpack_require__(66);
+  every = __webpack_require__(67);
 
   XMLNode = __webpack_require__(6);
 
-  XMLAttribute = __webpack_require__(55);
+  XMLAttribute = __webpack_require__(56);
 
   XMLProcessingInstruction = __webpack_require__(25);
 
@@ -3798,7 +3798,7 @@ module.exports = pbxProject;
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseCopy = __webpack_require__(72),
+var baseCopy = __webpack_require__(73),
     keys = __webpack_require__(8);
 
 /**
@@ -3858,7 +3858,7 @@ module.exports = baseGet;
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqualDeep = __webpack_require__(78),
+var baseIsEqualDeep = __webpack_require__(79),
     isObject = __webpack_require__(0),
     isObjectLike = __webpack_require__(4);
 
@@ -3978,7 +3978,7 @@ module.exports = getLength;
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isNative = __webpack_require__(94);
+var isNative = __webpack_require__(95);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -4055,7 +4055,7 @@ module.exports = isStrictComparable;
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(84),
+var baseToString = __webpack_require__(85),
     isArray = __webpack_require__(3);
 
 /** Used to match property names within property paths. */
@@ -5384,131 +5384,223 @@ exports.project = __webpack_require__(19)
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+"use strict";
 
-;(function (exports) {
-	'use strict';
 
-  var Arr = (typeof Uint8Array !== 'undefined')
-    ? Uint8Array
-    : Array
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-	var PLUS   = '+'.charCodeAt(0)
-	var SLASH  = '/'.charCodeAt(0)
-	var NUMBER = '0'.charCodeAt(0)
-	var LOWER  = 'a'.charCodeAt(0)
-	var UPPER  = 'A'.charCodeAt(0)
-	var PLUS_URL_SAFE = '-'.charCodeAt(0)
-	var SLASH_URL_SAFE = '_'.charCodeAt(0)
+var _fs = __webpack_require__(9);
 
-	function decode (elt) {
-		var code = elt.charCodeAt(0)
-		if (code === PLUS ||
-		    code === PLUS_URL_SAFE)
-			return 62 // '+'
-		if (code === SLASH ||
-		    code === SLASH_URL_SAFE)
-			return 63 // '/'
-		if (code < NUMBER)
-			return -1 //no match
-		if (code < NUMBER + 10)
-			return code - NUMBER + 26 + 26
-		if (code < UPPER + 26)
-			return code - UPPER
-		if (code < LOWER + 26)
-			return code - LOWER + 26
-	}
+var _fs2 = _interopRequireDefault(_fs);
 
-	function b64ToByteArray (b64) {
-		var i, j, l, tmp, placeHolders, arr
+var _path = __webpack_require__(12);
 
-		if (b64.length % 4 > 0) {
-			throw new Error('Invalid string. Length must be a multiple of 4')
-		}
+var _path2 = _interopRequireDefault(_path);
 
-		// the number of equal signs (place holders)
-		// if there are two placeholders, than the two characters before it
-		// represent one byte
-		// if there is only one, then the three characters before it represent 2 bytes
-		// this is just a cheap hack to not do indexOf twice
-		var len = b64.length
-		placeHolders = '=' === b64.charAt(len - 2) ? 2 : '=' === b64.charAt(len - 1) ? 1 : 0
+var _xcode = __webpack_require__(40);
 
-		// base64 is 4/3 + up to two characters of the original data
-		arr = new Arr(b64.length * 3 / 4 - placeHolders)
+var _xcode2 = _interopRequireDefault(_xcode);
 
-		// if there are placeholders, only get up to the last complete 4 chars
-		l = placeHolders > 0 ? b64.length - 4 : b64.length
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-		var L = 0
+exports.default = function (context) {
+  var platformMetadata = context.requireCordovaModule('cordova-lib/src/cordova/platform_metadata');
+  var projectRoot = context.opts.projectRoot;
+  var glob = context.requireCordovaModule('glob');
 
-		function push (v) {
-			arr[L++] = v
-		}
+  // This script has to be executed depending on the command line arguments, not
+  // on the hook execution cycle.
+  if (context.hook === 'after_platform_add' && context.cmdLine.includes('platform add') || context.hook === 'after_prepare' && context.cmdLine.includes('prepare') || context.hook === 'after_plugin_add' && context.cmdLine.includes('plugin add')) {
+    platformMetadata.getPlatformVersions(projectRoot).then(function (platformVersions) {
+      var IOS_MIN_DEPLOYMENT_TARGET = '7.0';
+      var platformPath = _path2.default.join(projectRoot, 'platforms', 'ios');
+      var config = getConfigParser(context, _path2.default.join(projectRoot, 'config.xml'));
 
-		for (i = 0, j = 0; i < l; i += 4, j += 3) {
-			tmp = (decode(b64.charAt(i)) << 18) | (decode(b64.charAt(i + 1)) << 12) | (decode(b64.charAt(i + 2)) << 6) | decode(b64.charAt(i + 3))
-			push((tmp & 0xFF0000) >> 16)
-			push((tmp & 0xFF00) >> 8)
-			push(tmp & 0xFF)
-		}
+      var bridgingHeaderPath = void 0;
+      var bridgingHeaderContent = void 0;
+      var swift2objHeaderPath = void 0;
+      var swift2objcHeaderContent = void 0;
+      var projectName = void 0;
+      var projectPath = void 0;
+      var pluginsPath = void 0;
+      var iosPlatformVersion = void 0;
+      var pbxprojPath = void 0;
+      var xcodeProject = void 0;
 
-		if (placeHolders === 2) {
-			tmp = (decode(b64.charAt(i)) << 2) | (decode(b64.charAt(i + 1)) >> 4)
-			push(tmp & 0xFF)
-		} else if (placeHolders === 1) {
-			tmp = (decode(b64.charAt(i)) << 10) | (decode(b64.charAt(i + 1)) << 4) | (decode(b64.charAt(i + 2)) >> 2)
-			push((tmp >> 8) & 0xFF)
-			push(tmp & 0xFF)
-		}
+      var COMMENT_KEY = /_comment$/;
+      var buildConfigs = void 0;
+      var buildConfig = void 0;
+      var configName = void 0;
 
-		return arr
-	}
+      platformVersions.forEach(function (platformVersion) {
+        if (platformVersion.platform === 'ios') {
+          iosPlatformVersion = platformVersion.version;
+        }
+      });
 
-	function uint8ToBase64 (uint8) {
-		var i,
-			extraBytes = uint8.length % 3, // if we have 1 byte left, pad 2 bytes
-			output = "",
-			temp, length
+      if (!iosPlatformVersion) {
+        return;
+      }
 
-		function encode (num) {
-			return lookup.charAt(num)
-		}
+      projectName = config.name();
+      projectPath = _path2.default.join(platformPath, projectName);
+      pbxprojPath = _path2.default.join(platformPath, projectName + '.xcodeproj', 'project.pbxproj');
+      xcodeProject = _xcode2.default.project(pbxprojPath);
+      pluginsPath = _path2.default.join(projectPath, 'Plugins');
 
-		function tripletToBase64 (num) {
-			return encode(num >> 18 & 0x3F) + encode(num >> 12 & 0x3F) + encode(num >> 6 & 0x3F) + encode(num & 0x3F)
-		}
+      xcodeProject.parseSync();
 
-		// go through the array every three bytes, we'll deal with trailing stuff later
-		for (i = 0, length = uint8.length - extraBytes; i < length; i += 3) {
-			temp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
-			output += tripletToBase64(temp)
-		}
+      bridgingHeaderPath = getBridgingHeaderPath(context, projectPath, iosPlatformVersion);
 
-		// pad the end with zeros, but make sure to not forget the extra bytes
-		switch (extraBytes) {
-			case 1:
-				temp = uint8[uint8.length - 1]
-				output += encode(temp >> 2)
-				output += encode((temp << 4) & 0x3F)
-				output += '=='
-				break
-			case 2:
-				temp = (uint8[uint8.length - 2] << 8) + (uint8[uint8.length - 1])
-				output += encode(temp >> 10)
-				output += encode((temp >> 4) & 0x3F)
-				output += encode((temp << 2) & 0x3F)
-				output += '='
-				break
-		}
+      try {
+        _fs2.default.statSync(bridgingHeaderPath);
+      } catch (err) {
+        // If the bridging header doesn't exist, we create it with the minimum
+        // Cordova/CDV.h import.
+        bridgingHeaderContent = ['//', '//  Use this file to import your target\'s public headers that you would like to expose to Swift.', '//', '#import <Cordova/CDV.h>'];
+        _fs2.default.writeFileSync(bridgingHeaderPath, bridgingHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
+        xcodeProject.addHeaderFile('Bridging-Header.h', null);
+      }
 
-		return output
-	}
+      swift2objHeaderPath = _path2.default.posix.join(projectPath, 'Plugins', 'Swift2Objc-Header.h');
 
-	exports.toByteArray = b64ToByteArray
-	exports.fromByteArray = uint8ToBase64
-}( false ? (this.base64js = {}) : exports))
+      try {
+        _fs2.default.statSync(swift2objHeaderPath);
+      } catch (err) {
+        // If the bridging header doesn't exist, we create it with the minimum
+        // ProductModuleName-Swift.h import.
+        swift2objcHeaderContent = ['//', '//  Use this file to import your projects\'s generated swift-header to expose Swift to Objective-C.', '//', '#import "' + projectName.replace(/\ /g, '_') + '-Swift.h"'];
+        _fs2.default.writeFileSync(swift2objHeaderPath, swift2objcHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
+        xcodeProject.addHeaderFile('Swift2Objc-Header.h');
+      }
 
+      buildConfigs = xcodeProject.pbxXCBuildConfigurationSection();
+
+      var bridgingHeaderProperty = '"$(PROJECT_DIR)/$(PROJECT_NAME)' + bridgingHeaderPath.split(projectPath)[1] + '"';
+
+      for (configName in buildConfigs) {
+        if (!COMMENT_KEY.test(configName)) {
+          buildConfig = buildConfigs[configName];
+          if (xcodeProject.getBuildProperty('SWIFT_OBJC_BRIDGING_HEADER', buildConfig.name) !== bridgingHeaderProperty) {
+            xcodeProject.updateBuildProperty('SWIFT_OBJC_BRIDGING_HEADER', bridgingHeaderProperty, buildConfig.name);
+            console.log('Update IOS build setting SWIFT_OBJC_BRIDGING_HEADER to:', bridgingHeaderProperty, 'for build configuration', buildConfig.name);
+          }
+        }
+      }
+
+      // Look for any bridging header defined in the plugin
+      glob('**/*Bridging-Header*.h', { cwd: pluginsPath }, function (error, files) {
+        var bridgingHeader = _path2.default.basename(bridgingHeaderPath);
+        var headers = files.map(function (filePath) {
+          return _path2.default.basename(filePath);
+        });
+
+        // if other bridging headers are found, they are imported in the
+        // one already configured in the project.
+        var content = _fs2.default.readFileSync(bridgingHeaderPath, 'utf-8');
+
+        if (error) throw new Error(error);
+
+        headers.forEach(function (header) {
+          if (header !== bridgingHeader && !~content.indexOf(header)) {
+            if (content.charAt(content.length - 1) !== '\n') {
+              content += '\n';
+            }
+            content += '#import "' + header + '"\n';
+            console.log('Importing', header, 'into', bridgingHeaderPath);
+          }
+        });
+        _fs2.default.writeFileSync(bridgingHeaderPath, content, 'utf-8');
+
+        for (configName in buildConfigs) {
+          if (!COMMENT_KEY.test(configName)) {
+            buildConfig = buildConfigs[configName];
+            if (parseFloat(xcodeProject.getBuildProperty('IPHONEOS_DEPLOYMENT_TARGET', buildConfig.name)) < parseFloat(IOS_MIN_DEPLOYMENT_TARGET)) {
+              xcodeProject.updateBuildProperty('IPHONEOS_DEPLOYMENT_TARGET', IOS_MIN_DEPLOYMENT_TARGET, buildConfig.name);
+              console.log('Update IOS project deployment target to:', IOS_MIN_DEPLOYMENT_TARGET, 'for build configuration', buildConfig.name);
+            }
+
+            if (xcodeProject.getBuildProperty('ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES', buildConfig.name) !== 'YES') {
+              xcodeProject.updateBuildProperty('ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES', 'YES', buildConfig.name);
+              console.log('Update IOS build setting ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES to: YES', 'for build configuration', buildConfig.name);
+            }
+
+            if (xcodeProject.getBuildProperty('LD_RUNPATH_SEARCH_PATHS', buildConfig.name) !== '"@executable_path/Frameworks"') {
+              xcodeProject.updateBuildProperty('LD_RUNPATH_SEARCH_PATHS', '"@executable_path/Frameworks"', buildConfig.name);
+              console.log('Update IOS build setting LD_RUNPATH_SEARCH_PATHS to: @executable_path/Frameworks', 'for build configuration', buildConfig.name);
+            }
+
+            if (typeof xcodeProject.getBuildProperty('SWIFT_VERSION', buildConfig.name) === 'undefined') {
+              if (config.getPreference('UseLegacySwiftLanguageVersion', 'ios')) {
+                xcodeProject.updateBuildProperty('SWIFT_VERSION', '2.3', buildConfig.name);
+                console.log('Use legacy Swift language version', buildConfig.name);
+              } else if (config.getPreference('UseSwiftLanguageVersion', 'ios')) {
+                var swiftVersion = config.getPreference('UseSwiftLanguageVersion', 'ios');
+                xcodeProject.updateBuildProperty('SWIFT_VERSION', swiftVersion, buildConfig.name);
+                console.log('Use Swift language version', swiftVersion);
+              } else {
+                xcodeProject.updateBuildProperty('SWIFT_VERSION', '3.0', buildConfig.name);
+                console.log('Update SWIFT version to 3.0', buildConfig.name);
+              }
+            }
+
+            if (buildConfig.name === 'Debug') {
+              if (xcodeProject.getBuildProperty('SWIFT_OPTIMIZATION_LEVEL', buildConfig.name) !== '"-Onone"') {
+                xcodeProject.updateBuildProperty('SWIFT_OPTIMIZATION_LEVEL', '"-Onone"', buildConfig.name);
+                console.log('Update IOS build setting SWIFT_OPTIMIZATION_LEVEL to: -Onone', 'for build configuration', buildConfig.name);
+              }
+            }
+          }
+        }
+
+        _fs2.default.writeFileSync(pbxprojPath, xcodeProject.writeSync());
+      });
+    });
+  }
+}; /*
+   * This hook adds all the needed config to implement a Cordova plugin with Swift.
+   *
+   *  - It adds a Bridging header importing Cordova/CDV.h if it's not already
+   *    the case. Else it concats all the bridging headers in one single file.
+   *
+   *    /!\ Please be sure not naming your bridging header file 'Bridging-Header.h'
+   *    else it won't be supported.
+   *
+   *  - It puts the ios deployment target to 7.0 in case your project would have a
+   *    lesser one.
+   *
+   *  - It updates the ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES build setting to YES.
+   *
+   *  - It updates the SWIFT_VERSION to 3.0.
+   */
+
+var getConfigParser = function getConfigParser(context, configPath) {
+  var semver = context.requireCordovaModule('semver');
+  var ConfigParser = void 0;
+
+  if (semver.lt(context.opts.cordova.version, '5.4.0')) {
+    ConfigParser = context.requireCordovaModule('cordova-lib/src/ConfigParser/ConfigParser');
+  } else {
+    ConfigParser = context.requireCordovaModule('cordova-common/src/ConfigParser/ConfigParser');
+  }
+
+  return new ConfigParser(configPath);
+};
+
+var getBridgingHeaderPath = function getBridgingHeaderPath(context, projectPath, iosPlatformVersion) {
+  var semver = context.requireCordovaModule('semver');
+  var bridgingHeaderPath = void 0;
+  if (semver.lt(iosPlatformVersion, '4.0.0')) {
+    bridgingHeaderPath = _path2.default.posix.join(projectPath, 'Plugins', 'Bridging-Header.h');
+  } else {
+    bridgingHeaderPath = _path2.default.posix.join(projectPath, 'Bridging-Header.h');
+  }
+
+  return bridgingHeaderPath;
+};
+module.exports = exports['default'];
 
 /***/ }),
 /* 42 */
@@ -5519,7 +5611,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
 // adapted from http://code.google.com/p/plist/source/browse/trunk/src/main/java/com/dd/plist/BinaryPropertyListWriter.java
 
-var streamBuffers = __webpack_require__(50);
+var streamBuffers = __webpack_require__(51);
 
 var debug = false;
 
@@ -6322,7 +6414,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;//     uuid.js
     // Moderately fast, high quality
     if (true) {
       try {
-        var _rb = __webpack_require__(104).randomBytes;
+        var _rb = __webpack_require__(105).randomBytes;
         _nodeRNG = _rng = _rb && function() {return _rb(16);};
         _rng();
       } catch(e) {}
@@ -6548,8 +6640,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;//     uuid.js
  * Module dependencies.
  */
 
-var base64 = __webpack_require__(41);
-var xmlbuilder = __webpack_require__(64);
+var base64 = __webpack_require__(48);
+var xmlbuilder = __webpack_require__(65);
 
 /**
  * Module exports.
@@ -6771,6 +6863,136 @@ for (i in nodeFunctions) exports[i] = nodeFunctions[i];
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+
+;(function (exports) {
+	'use strict';
+
+  var Arr = (typeof Uint8Array !== 'undefined')
+    ? Uint8Array
+    : Array
+
+	var PLUS   = '+'.charCodeAt(0)
+	var SLASH  = '/'.charCodeAt(0)
+	var NUMBER = '0'.charCodeAt(0)
+	var LOWER  = 'a'.charCodeAt(0)
+	var UPPER  = 'A'.charCodeAt(0)
+	var PLUS_URL_SAFE = '-'.charCodeAt(0)
+	var SLASH_URL_SAFE = '_'.charCodeAt(0)
+
+	function decode (elt) {
+		var code = elt.charCodeAt(0)
+		if (code === PLUS ||
+		    code === PLUS_URL_SAFE)
+			return 62 // '+'
+		if (code === SLASH ||
+		    code === SLASH_URL_SAFE)
+			return 63 // '/'
+		if (code < NUMBER)
+			return -1 //no match
+		if (code < NUMBER + 10)
+			return code - NUMBER + 26 + 26
+		if (code < UPPER + 26)
+			return code - UPPER
+		if (code < LOWER + 26)
+			return code - LOWER + 26
+	}
+
+	function b64ToByteArray (b64) {
+		var i, j, l, tmp, placeHolders, arr
+
+		if (b64.length % 4 > 0) {
+			throw new Error('Invalid string. Length must be a multiple of 4')
+		}
+
+		// the number of equal signs (place holders)
+		// if there are two placeholders, than the two characters before it
+		// represent one byte
+		// if there is only one, then the three characters before it represent 2 bytes
+		// this is just a cheap hack to not do indexOf twice
+		var len = b64.length
+		placeHolders = '=' === b64.charAt(len - 2) ? 2 : '=' === b64.charAt(len - 1) ? 1 : 0
+
+		// base64 is 4/3 + up to two characters of the original data
+		arr = new Arr(b64.length * 3 / 4 - placeHolders)
+
+		// if there are placeholders, only get up to the last complete 4 chars
+		l = placeHolders > 0 ? b64.length - 4 : b64.length
+
+		var L = 0
+
+		function push (v) {
+			arr[L++] = v
+		}
+
+		for (i = 0, j = 0; i < l; i += 4, j += 3) {
+			tmp = (decode(b64.charAt(i)) << 18) | (decode(b64.charAt(i + 1)) << 12) | (decode(b64.charAt(i + 2)) << 6) | decode(b64.charAt(i + 3))
+			push((tmp & 0xFF0000) >> 16)
+			push((tmp & 0xFF00) >> 8)
+			push(tmp & 0xFF)
+		}
+
+		if (placeHolders === 2) {
+			tmp = (decode(b64.charAt(i)) << 2) | (decode(b64.charAt(i + 1)) >> 4)
+			push(tmp & 0xFF)
+		} else if (placeHolders === 1) {
+			tmp = (decode(b64.charAt(i)) << 10) | (decode(b64.charAt(i + 1)) << 4) | (decode(b64.charAt(i + 2)) >> 2)
+			push((tmp >> 8) & 0xFF)
+			push(tmp & 0xFF)
+		}
+
+		return arr
+	}
+
+	function uint8ToBase64 (uint8) {
+		var i,
+			extraBytes = uint8.length % 3, // if we have 1 byte left, pad 2 bytes
+			output = "",
+			temp, length
+
+		function encode (num) {
+			return lookup.charAt(num)
+		}
+
+		function tripletToBase64 (num) {
+			return encode(num >> 18 & 0x3F) + encode(num >> 12 & 0x3F) + encode(num >> 6 & 0x3F) + encode(num & 0x3F)
+		}
+
+		// go through the array every three bytes, we'll deal with trailing stuff later
+		for (i = 0, length = uint8.length - extraBytes; i < length; i += 3) {
+			temp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
+			output += tripletToBase64(temp)
+		}
+
+		// pad the end with zeros, but make sure to not forget the extra bytes
+		switch (extraBytes) {
+			case 1:
+				temp = uint8[uint8.length - 1]
+				output += encode(temp >> 2)
+				output += encode((temp << 4) & 0x3F)
+				output += '=='
+				break
+			case 2:
+				temp = (uint8[uint8.length - 2] << 8) + (uint8[uint8.length - 1])
+				output += encode(temp >> 10)
+				output += encode((temp >> 4) & 0x3F)
+				output += encode((temp << 2) & 0x3F)
+				output += '='
+				break
+		}
+
+		return output
+	}
+
+	exports.toByteArray = b64ToByteArray
+	exports.fromByteArray = uint8ToBase64
+}( false ? (this.base64js = {}) : exports))
+
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var bplistParser = __webpack_require__(43),
     bplistCreator = __webpack_require__(42),
     plist = __webpack_require__(47),
@@ -6876,7 +7098,7 @@ exports.parse = function(aStringOrBuffer, aFile) {
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var stream = __webpack_require__(39),
@@ -6998,16 +7220,16 @@ util.inherits(ReadableStreamBuffer, stream.Stream);
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(13);
-module.exports.ReadableStreamBuffer = __webpack_require__(49);
-module.exports.WritableStreamBuffer = __webpack_require__(51);
+module.exports.ReadableStreamBuffer = __webpack_require__(50);
+module.exports.WritableStreamBuffer = __webpack_require__(52);
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var util = __webpack_require__(5),
@@ -7107,7 +7329,7 @@ util.inherits(WritableStreamBuffer, stream.Stream);
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9013,7 +9235,7 @@ module.exports = {
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(12),
@@ -9234,7 +9456,7 @@ module.exports = pbxFile;
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pbxProj = __webpack_require__(19),
@@ -9522,7 +9744,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -9560,14 +9782,14 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
 (function() {
   var XMLBuilder, XMLDeclaration, XMLDocType, XMLElement, XMLStringifier;
 
-  XMLStringifier = __webpack_require__(62);
+  XMLStringifier = __webpack_require__(63);
 
   XMLDeclaration = __webpack_require__(22);
 
@@ -9635,7 +9857,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -9709,7 +9931,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -9761,7 +9983,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -9851,7 +10073,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -9913,7 +10135,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -9968,7 +10190,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.9.1
@@ -10139,7 +10361,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
@@ -10194,16 +10416,16 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.9.1
 (function() {
   var XMLBuilder, assign;
 
-  assign = __webpack_require__(97);
+  assign = __webpack_require__(98);
 
-  XMLBuilder = __webpack_require__(56);
+  XMLBuilder = __webpack_require__(57);
 
   module.exports.create = function(name, xmldec, doctype, options) {
     options = assign({}, xmldec, doctype, options);
@@ -10214,7 +10436,7 @@ module.exports = pbxWriter;
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports) {
 
 /**
@@ -10239,12 +10461,12 @@ module.exports = last;
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayEvery = __webpack_require__(68),
-    baseCallback = __webpack_require__(71),
-    baseEvery = __webpack_require__(75),
+var arrayEvery = __webpack_require__(69),
+    baseCallback = __webpack_require__(72),
+    baseEvery = __webpack_require__(76),
     isArray = __webpack_require__(3),
     isIterateeCall = __webpack_require__(15);
 
@@ -10311,7 +10533,7 @@ module.exports = every;
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports) {
 
 /** Used as the `TypeError` message for "Functions" methods. */
@@ -10375,7 +10597,7 @@ module.exports = restParam;
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports) {
 
 /**
@@ -10404,7 +10626,7 @@ module.exports = arrayEvery;
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports) {
 
 /**
@@ -10433,7 +10655,7 @@ module.exports = arraySome;
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var keys = __webpack_require__(8);
@@ -10471,14 +10693,14 @@ module.exports = assignWith;
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseMatches = __webpack_require__(80),
-    baseMatchesProperty = __webpack_require__(81),
+var baseMatches = __webpack_require__(81),
+    baseMatchesProperty = __webpack_require__(82),
     bindCallback = __webpack_require__(30),
     identity = __webpack_require__(36),
-    property = __webpack_require__(100);
+    property = __webpack_require__(101);
 
 /**
  * The base implementation of `_.callback` which supports specifying the
@@ -10512,7 +10734,7 @@ module.exports = baseCallback;
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports) {
 
 /**
@@ -10541,7 +10763,7 @@ module.exports = baseCopy;
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(0);
@@ -10570,11 +10792,11 @@ module.exports = baseCreate;
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseForOwn = __webpack_require__(77),
-    createBaseEach = __webpack_require__(86);
+var baseForOwn = __webpack_require__(78),
+    createBaseEach = __webpack_require__(87);
 
 /**
  * The base implementation of `_.forEach` without support for callback
@@ -10591,10 +10813,10 @@ module.exports = baseEach;
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(74);
+var baseEach = __webpack_require__(75);
 
 /**
  * The base implementation of `_.every` without support for callback
@@ -10619,10 +10841,10 @@ module.exports = baseEvery;
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createBaseFor = __webpack_require__(87);
+var createBaseFor = __webpack_require__(88);
 
 /**
  * The base implementation of `baseForIn` and `baseForOwn` which iterates
@@ -10642,10 +10864,10 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFor = __webpack_require__(76),
+var baseFor = __webpack_require__(77),
     keys = __webpack_require__(8);
 
 /**
@@ -10665,14 +10887,14 @@ module.exports = baseForOwn;
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var equalArrays = __webpack_require__(88),
-    equalByTag = __webpack_require__(89),
-    equalObjects = __webpack_require__(90),
+var equalArrays = __webpack_require__(89),
+    equalByTag = __webpack_require__(90),
+    equalObjects = __webpack_require__(91),
     isArray = __webpack_require__(3),
-    isTypedArray = __webpack_require__(96);
+    isTypedArray = __webpack_require__(97);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
@@ -10773,7 +10995,7 @@ module.exports = baseIsEqualDeep;
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsEqual = __webpack_require__(28),
@@ -10831,11 +11053,11 @@ module.exports = baseIsMatch;
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsMatch = __webpack_require__(79),
-    getMatchData = __webpack_require__(91),
+var baseIsMatch = __webpack_require__(80),
+    getMatchData = __webpack_require__(92),
     toObject = __webpack_require__(2);
 
 /**
@@ -10867,16 +11089,16 @@ module.exports = baseMatches;
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(27),
     baseIsEqual = __webpack_require__(28),
-    baseSlice = __webpack_require__(83),
+    baseSlice = __webpack_require__(84),
     isArray = __webpack_require__(3),
     isKey = __webpack_require__(33),
     isStrictComparable = __webpack_require__(34),
-    last = __webpack_require__(65),
+    last = __webpack_require__(66),
     toObject = __webpack_require__(2),
     toPath = __webpack_require__(35);
 
@@ -10918,7 +11140,7 @@ module.exports = baseMatchesProperty;
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(27),
@@ -10943,7 +11165,7 @@ module.exports = basePropertyDeep;
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports) {
 
 /**
@@ -10981,7 +11203,7 @@ module.exports = baseSlice;
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports) {
 
 /**
@@ -11000,12 +11222,12 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var bindCallback = __webpack_require__(30),
     isIterateeCall = __webpack_require__(15),
-    restParam = __webpack_require__(67);
+    restParam = __webpack_require__(68);
 
 /**
  * Creates a `_.assign`, `_.defaults`, or `_.merge` function.
@@ -11047,7 +11269,7 @@ module.exports = createAssigner;
 
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getLength = __webpack_require__(31),
@@ -11084,7 +11306,7 @@ module.exports = createBaseEach;
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toObject = __webpack_require__(2);
@@ -11117,10 +11339,10 @@ module.exports = createBaseFor;
 
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arraySome = __webpack_require__(69);
+var arraySome = __webpack_require__(70);
 
 /**
  * A specialized version of `baseIsEqualDeep` for arrays with support for
@@ -11174,7 +11396,7 @@ module.exports = equalArrays;
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports) {
 
 /** `Object#toString` result references. */
@@ -11228,7 +11450,7 @@ module.exports = equalByTag;
 
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var keys = __webpack_require__(8);
@@ -11301,11 +11523,11 @@ module.exports = equalObjects;
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isStrictComparable = __webpack_require__(34),
-    pairs = __webpack_require__(99);
+    pairs = __webpack_require__(100);
 
 /**
  * Gets the propery names, values, and compare flags of `object`.
@@ -11328,14 +11550,14 @@ module.exports = getMatchData;
 
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArguments = __webpack_require__(16),
     isArray = __webpack_require__(3),
     isIndex = __webpack_require__(14),
     isLength = __webpack_require__(7),
-    keysIn = __webpack_require__(98);
+    keysIn = __webpack_require__(99);
 
 /** Used for native method references. */
 var objectProto = Object.prototype;
@@ -11375,7 +11597,7 @@ module.exports = shimKeys;
 
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArguments = __webpack_require__(16),
@@ -11383,7 +11605,7 @@ var isArguments = __webpack_require__(16),
     isArrayLike = __webpack_require__(10),
     isFunction = __webpack_require__(11),
     isObjectLike = __webpack_require__(4),
-    isString = __webpack_require__(95),
+    isString = __webpack_require__(96),
     keys = __webpack_require__(8);
 
 /**
@@ -11428,7 +11650,7 @@ module.exports = isEmpty;
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(11),
@@ -11482,7 +11704,7 @@ module.exports = isNative;
 
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObjectLike = __webpack_require__(4);
@@ -11523,7 +11745,7 @@ module.exports = isString;
 
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isLength = __webpack_require__(7),
@@ -11603,12 +11825,12 @@ module.exports = isTypedArray;
 
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assignWith = __webpack_require__(70),
+var assignWith = __webpack_require__(71),
     baseAssign = __webpack_require__(26),
-    createAssigner = __webpack_require__(85);
+    createAssigner = __webpack_require__(86);
 
 /**
  * Assigns own enumerable properties of source object(s) to the destination
@@ -11652,7 +11874,7 @@ module.exports = assign;
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArguments = __webpack_require__(16),
@@ -11722,7 +11944,7 @@ module.exports = keysIn;
 
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var keys = __webpack_require__(8),
@@ -11761,11 +11983,11 @@ module.exports = pairs;
 
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseProperty = __webpack_require__(29),
-    basePropertyDeep = __webpack_require__(82),
+    basePropertyDeep = __webpack_require__(83),
     isKey = __webpack_require__(33);
 
 /**
@@ -11798,7 +12020,7 @@ module.exports = property;
 
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 function DOMParser(options){
@@ -12047,7 +12269,7 @@ function appendElement (hander,node) {
 }//appendChild and setAttributeNS are preformance key
 
 //if(typeof require == 'function'){
-	var XMLReader = __webpack_require__(102).XMLReader;
+	var XMLReader = __webpack_require__(103).XMLReader;
 	var DOMImplementation = exports.DOMImplementation = __webpack_require__(37).DOMImplementation;
 	exports.XMLSerializer = __webpack_require__(37).XMLSerializer ;
 	exports.DOMParser = DOMParser;
@@ -12055,7 +12277,7 @@ function appendElement (hander,node) {
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports) {
 
 //[4]   	NameStartChar	   ::=   	":" | [A-Z] | "_" | [a-z] | [#xC0-#xD6] | [#xD8-#xF6] | [#xF8-#x2FF] | [#x370-#x37D] | [#x37F-#x1FFF] | [#x200C-#x200D] | [#x2070-#x218F] | [#x2C00-#x2FEF] | [#x3001-#xD7FF] | [#xF900-#xFDCF] | [#xFDF0-#xFFFD] | [#x10000-#xEFFFF]
@@ -12694,238 +12916,16 @@ exports.XMLReader = XMLReader;
 
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports) {
 
 module.exports = require("child_process");
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports) {
 
 module.exports = require("crypto");
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _fs = __webpack_require__(9);
-
-var _fs2 = _interopRequireDefault(_fs);
-
-var _path = __webpack_require__(12);
-
-var _path2 = _interopRequireDefault(_path);
-
-var _xcode = __webpack_require__(40);
-
-var _xcode2 = _interopRequireDefault(_xcode);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (context) {
-  var platformMetadata = context.requireCordovaModule('cordova-lib/src/cordova/platform_metadata');
-  var projectRoot = context.opts.projectRoot;
-  var glob = context.requireCordovaModule('glob');
-
-  // This script has to be executed depending on the command line arguments, not
-  // on the hook execution cycle.
-  if (context.hook === 'after_platform_add' && context.cmdLine.includes('platform add') || context.hook === 'after_prepare' && context.cmdLine.includes('prepare') || context.hook === 'after_plugin_add' && context.cmdLine.includes('plugin add')) {
-    platformMetadata.getPlatformVersions(projectRoot).then(function (platformVersions) {
-      var IOS_MIN_DEPLOYMENT_TARGET = '7.0';
-      var platformPath = _path2.default.join(projectRoot, 'platforms', 'ios');
-      var config = getConfigParser(context, _path2.default.join(projectRoot, 'config.xml'));
-
-      var bridgingHeaderPath = void 0;
-      var bridgingHeaderContent = void 0;
-      var swift2objHeaderPath = void 0;
-      var swift2objcHeaderContent = void 0;
-      var projectName = void 0;
-      var projectPath = void 0;
-      var pluginsPath = void 0;
-      var iosPlatformVersion = void 0;
-      var pbxprojPath = void 0;
-      var xcodeProject = void 0;
-
-      var COMMENT_KEY = /_comment$/;
-      var buildConfigs = void 0;
-      var buildConfig = void 0;
-      var configName = void 0;
-
-      platformVersions.forEach(function (platformVersion) {
-        if (platformVersion.platform === 'ios') {
-          iosPlatformVersion = platformVersion.version;
-        }
-      });
-
-      if (!iosPlatformVersion) {
-        return;
-      }
-
-      projectName = config.name();
-      projectPath = _path2.default.join(platformPath, projectName);
-      pbxprojPath = _path2.default.join(platformPath, projectName + '.xcodeproj', 'project.pbxproj');
-      xcodeProject = _xcode2.default.project(pbxprojPath);
-      pluginsPath = _path2.default.join(projectPath, 'Plugins');
-
-      xcodeProject.parseSync();
-
-      bridgingHeaderPath = getBridgingHeaderPath(context, projectPath, iosPlatformVersion);
-
-      try {
-        _fs2.default.statSync(bridgingHeaderPath);
-      } catch (err) {
-        // If the bridging header doesn't exist, we create it with the minimum
-        // Cordova/CDV.h import.
-        bridgingHeaderContent = ['//', '//  Use this file to import your target\'s public headers that you would like to expose to Swift.', '//', '#import <Cordova/CDV.h>'];
-        _fs2.default.writeFileSync(bridgingHeaderPath, bridgingHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
-        xcodeProject.addHeaderFile('Bridging-Header.h', null);
-      }
-
-      swift2objHeaderPath = _path2.default.posix.join(projectPath, 'Plugins', 'Swift2Objc-Header.h');
-
-      try {
-        _fs2.default.statSync(swift2objHeaderPath);
-      } catch (err) {
-        // If the bridging header doesn't exist, we create it with the minimum
-        // ProductModuleName-Swift.h import.
-        swift2objcHeaderContent = ['//', '//  Use this file to import your projects\'s generated swift-header to expose Swift to Objective-C.', '//', '#import "' + projectName.replace(' ', '_') + '-Swift.h"'];
-        _fs2.default.writeFileSync(swift2objHeaderPath, swift2objcHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
-        xcodeProject.addHeaderFile('Swift2Objc-Header.h');
-      }
-
-      buildConfigs = xcodeProject.pbxXCBuildConfigurationSection();
-
-      var bridgingHeaderProperty = '"$(PROJECT_DIR)/$(PROJECT_NAME)' + bridgingHeaderPath.split(projectPath)[1] + '"';
-
-      for (configName in buildConfigs) {
-        if (!COMMENT_KEY.test(configName)) {
-          buildConfig = buildConfigs[configName];
-          if (xcodeProject.getBuildProperty('SWIFT_OBJC_BRIDGING_HEADER', buildConfig.name) !== bridgingHeaderProperty) {
-            xcodeProject.updateBuildProperty('SWIFT_OBJC_BRIDGING_HEADER', bridgingHeaderProperty, buildConfig.name);
-            console.log('Update IOS build setting SWIFT_OBJC_BRIDGING_HEADER to:', bridgingHeaderProperty, 'for build configuration', buildConfig.name);
-          }
-        }
-      }
-
-      // Look for any bridging header defined in the plugin
-      glob('**/*Bridging-Header*.h', { cwd: pluginsPath }, function (error, files) {
-        var bridgingHeader = _path2.default.basename(bridgingHeaderPath);
-        var headers = files.map(function (filePath) {
-          return _path2.default.basename(filePath);
-        });
-
-        // if other bridging headers are found, they are imported in the
-        // one already configured in the project.
-        var content = _fs2.default.readFileSync(bridgingHeaderPath, 'utf-8');
-
-        if (error) throw new Error(error);
-
-        headers.forEach(function (header) {
-          if (header !== bridgingHeader && !~content.indexOf(header)) {
-            if (content.charAt(content.length - 1) !== '\n') {
-              content += '\n';
-            }
-            content += '#import "' + header + '"\n';
-            console.log('Importing', header, 'into', bridgingHeaderPath);
-          }
-        });
-        _fs2.default.writeFileSync(bridgingHeaderPath, content, 'utf-8');
-
-        for (configName in buildConfigs) {
-          if (!COMMENT_KEY.test(configName)) {
-            buildConfig = buildConfigs[configName];
-            if (parseFloat(xcodeProject.getBuildProperty('IPHONEOS_DEPLOYMENT_TARGET', buildConfig.name)) < parseFloat(IOS_MIN_DEPLOYMENT_TARGET)) {
-              xcodeProject.updateBuildProperty('IPHONEOS_DEPLOYMENT_TARGET', IOS_MIN_DEPLOYMENT_TARGET, buildConfig.name);
-              console.log('Update IOS project deployment target to:', IOS_MIN_DEPLOYMENT_TARGET, 'for build configuration', buildConfig.name);
-            }
-
-            if (xcodeProject.getBuildProperty('ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES', buildConfig.name) !== 'YES') {
-              xcodeProject.updateBuildProperty('ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES', 'YES', buildConfig.name);
-              console.log('Update IOS build setting ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES to: YES', 'for build configuration', buildConfig.name);
-            }
-
-            if (xcodeProject.getBuildProperty('LD_RUNPATH_SEARCH_PATHS', buildConfig.name) !== '"@executable_path/Frameworks"') {
-              xcodeProject.updateBuildProperty('LD_RUNPATH_SEARCH_PATHS', '"@executable_path/Frameworks"', buildConfig.name);
-              console.log('Update IOS build setting LD_RUNPATH_SEARCH_PATHS to: @executable_path/Frameworks', 'for build configuration', buildConfig.name);
-            }
-
-            if (typeof xcodeProject.getBuildProperty('SWIFT_VERSION', buildConfig.name) === 'undefined') {
-              if (config.getPreference('UseLegacySwiftLanguageVersion', 'ios')) {
-                xcodeProject.updateBuildProperty('SWIFT_VERSION', '2.3', buildConfig.name);
-                console.log('Use legacy Swift language version', buildConfig.name);
-              } else if (config.getPreference('UseSwiftLanguageVersion', 'ios')) {
-                var swiftVersion = config.getPreference('UseSwiftLanguageVersion', 'ios');
-                xcodeProject.updateBuildProperty('SWIFT_VERSION', swiftVersion, buildConfig.name);
-                console.log('Use Swift language version', swiftVersion);
-              } else {
-                xcodeProject.updateBuildProperty('SWIFT_VERSION', '3.0', buildConfig.name);
-                console.log('Update SWIFT version to 3.0', buildConfig.name);
-              }
-            }
-
-            if (buildConfig.name === 'Debug') {
-              if (xcodeProject.getBuildProperty('SWIFT_OPTIMIZATION_LEVEL', buildConfig.name) !== '"-Onone"') {
-                xcodeProject.updateBuildProperty('SWIFT_OPTIMIZATION_LEVEL', '"-Onone"', buildConfig.name);
-                console.log('Update IOS build setting SWIFT_OPTIMIZATION_LEVEL to: -Onone', 'for build configuration', buildConfig.name);
-              }
-            }
-          }
-        }
-
-        _fs2.default.writeFileSync(pbxprojPath, xcodeProject.writeSync());
-      });
-    });
-  }
-}; /*
-   * This hook adds all the needed config to implement a Cordova plugin with Swift.
-   *
-   *  - It adds a Bridging header importing Cordova/CDV.h if it's not already
-   *    the case. Else it concats all the bridging headers in one single file.
-   *
-   *    /!\ Please be sure not naming your bridging header file 'Bridging-Header.h'
-   *    else it won't be supported.
-   *
-   *  - It puts the ios deployment target to 7.0 in case your project would have a
-   *    lesser one.
-   *
-   *  - It updates the ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES build setting to YES.
-   *
-   *  - It updates the SWIFT_VERSION to 3.0.
-   */
-
-var getConfigParser = function getConfigParser(context, configPath) {
-  var semver = context.requireCordovaModule('semver');
-  var ConfigParser = void 0;
-
-  if (semver.lt(context.opts.cordova.version, '5.4.0')) {
-    ConfigParser = context.requireCordovaModule('cordova-lib/src/ConfigParser/ConfigParser');
-  } else {
-    ConfigParser = context.requireCordovaModule('cordova-common/src/ConfigParser/ConfigParser');
-  }
-
-  return new ConfigParser(configPath);
-};
-
-var getBridgingHeaderPath = function getBridgingHeaderPath(context, projectPath, iosPlatformVersion) {
-  var semver = context.requireCordovaModule('semver');
-  var bridgingHeaderPath = void 0;
-  if (semver.lt(iosPlatformVersion, '4.0.0')) {
-    bridgingHeaderPath = _path2.default.posix.join(projectPath, 'Plugins', 'Bridging-Header.h');
-  } else {
-    bridgingHeaderPath = _path2.default.posix.join(projectPath, 'Bridging-Header.h');
-  }
-
-  return bridgingHeaderPath;
-};
-module.exports = exports['default'];
 
 /***/ })
 /******/ ]);
